@@ -10,17 +10,121 @@
 </head>
 <body>
     <nav class="nav-sect">
+        <p>nav bar</p>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Circle_Davys-Grey_Solid.svg/1200px-Circle_Davys-Grey_Solid.svg.png" alt="This is a gray circle" width="50">
-        <div> </div>
-        <div> </div>
-        <div> </div>
-        <div> </div>
+        <div class="line-up">
+            <a href="#">Home</a>
+            <a href="#">Learn</a>
+            <a href="#">Buy</a>
+            <a href="#">About Us</a>
+        </div>
     </nav>
     <main>
-
+        <p>image slider</p>
+        <div class="images">
+            <img src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXJsfGVufDB8MHwwfHx8Mg%3D%3D" alt="blocks">
+            <img src="https://images.unsplash.com/photo-1517404215738-15263e9f9178?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dXJsfGVufDB8MHwwfHx8Mg%3D%3D" alt="phone">
+        </div>
+        <p>product gallery</p>
+        <div class="product-gallery">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </main>
     <footer>
-
+        <p>contact info</p>
+        <div class="contact-info">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </footer>
 </body>
 </html>
+
+<style>
+
+body {
+    max-width:1200px;
+    margin:auto;
+}
+
+.nav-sect {
+    background-color:#e3e3e3;
+    padding:2rem;
+}
+
+.nav-sect, img {
+    display:block;
+    margin:auto;
+}
+
+.nav-item {
+    color: gray;
+    background-color: gray;
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    padding: 2rem;
+    margin: 5rem;
+}
+
+.line-up {
+    margin:auto;
+    margin-top:2rem;
+    text-align:center;
+}
+
+.line-up a {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.images {
+    margin:auto;
+    text-align:center;
+}
+
+.images img {
+    display:inline-block;
+}
+
+.product-gallery, .contact-info {
+    margin:auto;
+    text-align:center;
+}
+
+.product-gallery div {
+    color:gray;
+    background-color:gray;
+    display:inline-block;
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem;
+}
+
+footer {
+    background-color:#e3e3e3;
+}
+
+.contact-info div {
+    background-color: gray;
+    display:inline-block;
+    width:7rem;
+    height:7rem;
+    margin:2.5rem;
+}
+
+</style>
