@@ -8,7 +8,9 @@ nav {
     background-color: steelblue;
     padding: 10px;
     display:flex;
-    max-width:1000px;
+    justify-content: space-evenly;
+    text-align:center;
+    margin:0 auto;
 }
 
 nav a {
@@ -49,7 +51,8 @@ main {
 aside {
     margin: 2rem auto;
     max-width:1000px;
-    color: black;;
+    color: black;
+    position:relative;
 }
 
 aside img {
@@ -59,8 +62,8 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top:40px;
-    left:20px;
+    top:50px;
+    left:50px;
 }
 
 footer {
