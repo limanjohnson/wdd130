@@ -1,5 +1,5 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -58,7 +58,7 @@ aside img {
 }
 
 aside h2 {
-    position: relative;
+    position: absolute;
     top:40px;
     left:20px;
 }
