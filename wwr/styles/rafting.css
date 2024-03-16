@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color:#134266;
+    --secondary-color:#fce172;
+    --accent1-color: #9F6315;
+    --accent2-color:#1D1D6F;
+
+    --heading-font: 'Noto Sans', sans-serif;
+    --paragraph-font: 'Noto Serif', serif;
+
+    --nav-background-color:#3D6B8E;
+    --nav-link-color:#050538;
+    --nav-hover-link-color:#3D6B8E;
+    --nav-hover-background-color:#050538;
+}
+
+/***************** General *****************/
+
+* {
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+h1 {
+    color: #134266;
+    margin: 1rem;
+    font-family:var(--heading-font);
+}
+
+h2 {
+    color:var(--accent1-color);
+    margin: 1rem;
+    font-family:var(--heading-font);
+}
+
+p {
+    color:var(--accent2-color);
+    margin:1rem;
+    font-family:var(--paragraph-font);
+}
+
+
+/***************** Header *****************/
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fce172;
+    justify-content: center;
+}
+
+.logo {
+    width:10%;
+}
+
+.nav-bar nav a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/***************** Main *****************/
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    max-width:100%;
+    display:block;
+    position: relative;
+
+}
+
+.hero h1 {
+    position: absolute;
+    font-size: 5vw;
+    top: 4rem;
+    left: 1rem;
+    color:aliceblue;
+}
+
+.hero article {
+    position: absolute;
+    padding: 4rem;
+    background-color: rgba(0, 0, 0, .4);
+    bottom:1rem;
+    left:1rem;
+}
+
+.hero article p {
+    color:white;
+}
+
+.hero article img {
+    float:right;
+    max-width:50%;
+}
