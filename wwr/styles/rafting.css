@@ -18,7 +18,7 @@
 /***************** General *****************/
 
 * {
-    max-width: 1000px;
+    max-width: 1200px;
     margin:0 auto;
 }
 
@@ -39,7 +39,6 @@ p {
     margin:1rem;
     font-family:var(--paragraph-font);
 }
-
 
 /***************** Header *****************/
 
@@ -67,17 +66,18 @@ p {
 }
 
 .hero img {
-    max-width:100%;
     display:block;
     position: relative;
-
+    margin-left:0;
+    margin-right:0;
+    width:100%;
 }
 
 .hero h1 {
     position: absolute;
     font-size: 5vw;
     top: 4rem;
-    left: 1rem;
+    left: 5rem;
     color:aliceblue;
 }
 
@@ -96,4 +96,42 @@ p {
 .hero article img {
     float:right;
     max-width:50%;
+}
+
+.image-gallery-parent {
+    max-width:2000px;
+}
+
+.image-gallery {
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px 0;
+    align-items:center;
+    text-align:center;
+}
+
+.image-gallery .item {
+    max-width:32.3%;
+    margin:0px 5px 0px 5px
+}
+
+
+/***************** Footer *****************/
+
+footer {
+    border-top: 2px solid var(--accent1-color);
+    margin-top: 1rem;
+}
+
+footer p {
+    text-align:center;
+}
+
+.social-media {
+    display:flex;
+    max-width:500px;
+}
+
+.social-media img {
+    width:50px;
 }
