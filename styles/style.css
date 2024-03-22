@@ -4,19 +4,25 @@
     box-sizing: border-box;
 }
 
+header, footer, .grid {
+    max-width:840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
     display:flex;
     justify-content: space-evenly;
-    text-align:center;
-    margin:0 auto;
+    align-items:center;
+    /* margin:0 auto; */
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration:none;
     transition-duration: 200ms;
 }
 
@@ -36,6 +42,8 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float:right;
+    margin-top:1rem;
+    margin-left:1rem;
 }
 
 p {
@@ -43,9 +51,12 @@ p {
 }
 
 main {
-    max-width:1000px;
-    margin: 2rem auto;
+    margin: 0 auto;
     
+}
+
+main h1 {
+    border-bottom: 1px solid steelblue;
 }
 
 aside {
@@ -56,14 +67,16 @@ aside {
 }
 
 aside img {
-    width:400px;
-    height:auto;
+    width:250px;
+    height:500px;
+    object-fit: contain;
 }
 
 aside h2 {
     position: absolute;
     top:50px;
     left:50px;
+    color:#fff;
 }
 
 footer {
@@ -78,7 +91,28 @@ footer {
     /* margin:1rem; */
     margin-top: 2rem;
     padding:2rem;
-    border:2px solid black;
+    border:2px solid grey;
     background-color:#e3e3e3;
     clear:both;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.grid main {
+    grid-column: 2 / 4;
+    margin: 1rem;
+}
+
+.grid aside {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 20rem;
+    position:relative;
+}
+
+.state-image img {
+    object-fit: cover;
 }
