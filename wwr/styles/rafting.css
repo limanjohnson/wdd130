@@ -43,20 +43,29 @@ p {
 /***************** Header *****************/
 
 .nav-bar {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     background-color: #fce172;
     justify-content: center;
 }
 
 .logo {
-    width:10%;
+    max-width:25%;
+    min-width:10%;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
 .nav-bar nav a {
     margin-left: 2rem;
     margin-right: 2rem;
+}
+
+.nav-bar nav {
+    display:flex;
+    justify-content:space-around;
+    width:100%;
 }
 
 /***************** Main *****************/
@@ -79,6 +88,7 @@ p {
     top: 4rem;
     left: 5rem;
     color:aliceblue;
+    text-shadow: 2px 2px 8px black;
 }
 
 .hero article {
@@ -87,6 +97,7 @@ p {
     background-color: rgba(0, 0, 0, .4);
     bottom:1rem;
     left:1rem;
+    right:1rem;
 }
 
 .hero article p {
@@ -100,21 +111,55 @@ p {
 
 .image-gallery-parent {
     max-width:2000px;
+    padding: 2rem 0;
+}
+
+.image-gallery-parent h2 {
+    text-align:center;
 }
 
 .image-gallery {
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap:10px 0;
     align-items:center;
-    text-align:center;
+    justify-content:center;
 }
 
 .image-gallery .item {
-    max-width:32.3%;
+    max-width:100%;
     margin:0px 5px 0px 5px
 }
 
+.image-gallery figure {
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+
+.history-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.history-section h2 {
+    grid-column: 2 / span 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.history-section .p1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.history-section img {
+    grid-column: 2 / span 1;
+}
+
+.history-section .p2 {
+    grid-column: 3 / span 1;
+}
 
 /***************** Footer *****************/
 
