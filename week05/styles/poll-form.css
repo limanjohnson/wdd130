@@ -115,3 +115,11 @@ footer {
 .column2 {
     grid-template-columns: 1fr 2fr;
 }
+
+.textarea {
+    width:250px;
+}
+
+.form-item.css {
+    margin-bottom: 10px;
+}
