@@ -255,6 +255,10 @@ footer p {
     grid-row-end: 5;
 }
 
+.map iframe {
+    border:0;
+}
+
 /* general */
 
 * {
