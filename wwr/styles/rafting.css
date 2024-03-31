@@ -259,6 +259,21 @@ footer p {
     border:0;
 }
 
+.support a {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    text-align: center;
+    margin: auto 0;
+    text-decoration: none;
+    color: black;
+    transition-duration: 1s;
+}
+
+.support a:hover {
+    background-color: var(--primary-color);
+    color:white;
+}
+
 /* general */
 
 * {
