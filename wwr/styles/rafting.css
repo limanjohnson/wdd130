@@ -201,7 +201,7 @@ footer p {
     margin:1rem auto;
     padding:5rem;
     display:grid;
-    grid-column-start:1fr;
+    grid-column-start:1;
     grid-column-end:span 4;
     border-radius:10px;
 }
