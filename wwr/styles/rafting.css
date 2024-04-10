@@ -95,7 +95,7 @@ p {
 
 .hero article {
     position: absolute;
-    padding: 4rem;
+    padding: 3rem;
     background-color: rgba(0, 0, 0, .4);
     bottom:1rem;
     left:1rem;
@@ -486,6 +486,7 @@ figcaption {
     border-radius:10px;
     display:flex;
     flex-direction:column;
+    justify-content:space-between;
 }
 
 .destination-item h3 {
@@ -497,7 +498,8 @@ figcaption {
 .destination-item button {
     width:218px;
     align-self:center;
-    padding:.5rem 0
+    padding:.5rem 0;
+    margin-bottom:1rem;
 }
 
 .cataract-canyon img {
